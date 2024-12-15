@@ -18,6 +18,7 @@ export default function Create() {
           console.log(res);
         })
         .catch((err) => console.log(err));
+      // c;
     }
   }
 
