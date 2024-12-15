@@ -2,10 +2,6 @@ import { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 
 export default function Read() {
-  const [studentData, setStudentData] = useState({
-    name: "",
-    email: "",
-  });
   const location = useLocation();
   const { id, name, email } = location.state || {};
 
@@ -25,9 +21,9 @@ export default function Read() {
           <span className="fw-semibold">Email Id: </span>
           <span>{email}</span>
         </div>
-        <button onClick={handleEdit} className="btn btn-light my-2">
+        {/* <button onClick={handleEdit} className="btn btn-light my-2">
           Edit
-        </button>
+        </button> */}
         <Link to="/" className="btn btn-light my-2 float-end">
           Go back
         </Link>
